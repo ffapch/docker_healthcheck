@@ -1,0 +1,7 @@
+FROM nginx:1.10-alpine
+
+EXPOSE 80
+
+RUN apk update && apk add curl
+
+HEALTHCHECK --interval=5s --timeout=5s --start-period=5s --retries=3 CMD curl localhost || exit 1

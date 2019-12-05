@@ -1,0 +1,6 @@
+.dockerignore
+Dockerfile
+Dockerfile_healthcheck
+docker-compose.yaml
+
+node_modules/
